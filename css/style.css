@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cousine', monospace;
+    background-color: #161616;
+    margin: 0;
+    animation: fadeIn 3s;
+}
+
+.main-container .head {
+    margin-top: 5vh;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-container .head .head-logo #pfp {
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    width: 15rem;
+    /* animation: pulsate 1.5s infinite alternate;   */
+    box-shadow: 0 0 .2rem rgb(197, 197, 197),
+        0 0 .2rem #fff,
+        0 0 2rem #6d6d6d,
+        0 0 0.8rem #6d6d6d,
+        0 0 2.8rem #6d6d6d,
+        inset 0 0 1.3rem #6d6d6d; 
+}
+
+.main-container .head .head-title {
+    font-size: 1.5rem;
+    color: #8f8f8f;
+    font-weight: 500;
+}
+
+.main-container .head .head-title #name {
+    margin-top: 70px;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 0px;
+    animation: typing 1.25s steps(30, end), blink 1.25s step-end infinite;
+    white-space: nowrap;
+    border-right: 4px solid #131313;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100% }
+}
+
+@keyframes blink {
+    from, to {border-color: transparent}
+    50% {border-color: #2a2a2a;}
+}
+
+.main-container .selection {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-container .selection a {
+    text-decoration: none;
+    color: #8f8f8f;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem;
+    margin: .1rem;
+    border-radius: 5px;
+}
+
+.main-container .selection a:hover {
+    background-color: #131313;
+    color: #fafafa;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0.75;}
+    75% {opacity: 0.85;}
+    100% {opacity: 1;}
+}
